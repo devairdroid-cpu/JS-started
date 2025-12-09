@@ -62,8 +62,8 @@ console.log("Modified Activity: " + newActivity);
 
 // 4. Extract a Substring
 let headline = "Choose Your Adventure!";
-let substring = headline.substring(0, 6);
-console.log("Extracted Substring: " + substring);
+let Adventure = headline.substring(11, 21);
+console.log("Extracted Substring: " + Adventure);
 
 // 5. Add an Item to an Array
 let desserts = ["Ice Cream", "Pie", "Pudding"];
