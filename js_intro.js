@@ -45,49 +45,113 @@
 
 
 // 1.Convert to Uppercase
-let pet = "golden retriever";
-let result = pet.toUpperCase();
-console.log("golden retriever - UpperCase: " + result);
+// let pet = "golden retriever";
+// let result = pet.toUpperCase();
+// console.log("golden retriever - UpperCase: " + result);
 
-// 2. Find the Length of a String
-let question = "Can you solve this problem?";
-let lengthOfQuestion = question.length;
-console.log("Length of question: Can you solve this problem? = "+lengthOfQuestion);
+// // 2. Find the Length of a String
+// let question = "Can you solve this problem?";
+// let lengthOfQuestion = question.length;
+// console.log("Length of question: Can you solve this problem? = "+lengthOfQuestion);
 
-// 3. Replace a Word in a String
-let activity = "This game is boring";
-let newActivity = activity.replace("boring", "exciting");
-console.log("Original Activity: " + activity + " Modified Activity: " + newActivity);
-console.log("Modified Activity: " + newActivity);
+// // 3. Replace a Word in a String
+// let activity = "This game is boring";
+// let newActivity = activity.replace("boring", "exciting");
+// console.log("Original Activity: " + activity + " Modified Activity: " + newActivity);
+// console.log("Modified Activity: " + newActivity);
 
-// 4. Extract a Substring
-let headline = "Choose Your Adventure!";
-let Adventure = headline.substring(11, 21);
-console.log("Extracted Substring: " + Adventure);
+// // 4. Extract a Substring
+// let headline = "Choose Your Adventure!";
+// let Adventure = headline.substring(11, 21);
+// console.log("Extracted Substring: " + Adventure);
 
-// 5. Add an Item to an Array
-let desserts = ["Ice Cream", "Pie", "Pudding"];
-desserts.push("Cake");
-console.log("Desserts after adding Cake: " + desserts);
+// // 5. Add an Item to an Array
+// let desserts = ["Ice Cream", "Pie", "Pudding"];
+// desserts.push("Cake");
+// console.log("Desserts after adding Cake: " + desserts);
 
-// 6. Check if an Array Includes an Item
-let cities = ["London", "New York", "Tokyo"];
-let OtherCity = cities.includes("Pariss");
-console.log("Does city include Pariss? " + OtherCity);
+// // 6. Check if an Array Includes an Item
+// let cities = ["London", "New York", "Tokyo"];
+// let OtherCity = cities.includes("Pariss");
+// console.log("Does city include Pariss? " + OtherCity);
 
-// 7. Combine Two Arrays
-let cars = ["Sedan", "Coupe"];
-let trucks = ["Pickup", "SUV"];
-let vehicles = cars.concat(trucks);
-console.log("Combined Vehicles: " + vehicles);
+// // 7. Combine Two Arrays
+// let cars = ["Sedan", "Coupe"];
+// let trucks = ["Pickup", "SUV"];
+// let vehicles = cars.concat(trucks);
+// console.log("Combined Vehicles: " + vehicles);
 
-// 8. Find the Index of an Item in an Array
-let deserts = ["Ice Cream", "Pie", "Pudding", "Cake"];
-let indexOfPie = deserts.indexOf("Pie");
-console.log("Index of Pie: " + indexOfPie);
+// // 8. Find the Index of an Item in an Array
+// let deserts = ["Ice Cream", "Pie", "Pudding", "Cake"];
+// let indexOfPie = deserts.indexOf("Pie");
+// console.log("Index of Pie: " + indexOfPie);
 
-// 9. Reverse a String
-let word = "Technology"
-let reversedWord = word.split("").reverse().join("");
-console.log("Reversed Word: " + reversedWord);
+// // 9. Reverse a String
+// let word = "Technology"
+// let reversedWord = word.split("").reverse().join("");
+// console.log("Reversed Word: " + reversedWord);
+
+
+
+
+
+// function greet(name) {
+//   return function () {
+//    console.log("Hello " + name);
+//   };
+// }
+
+// const sayHello = greet("Babek");
+// sayHello(); 
+
+
+
+// function createCounter() {
+//   let count = 0;
+
+//   return function () {
+//     count++;
+//     return count;
+//   };
+// }
+
+// let counter = createCounter();
+
+// console.log(counter()); 
+// console.log(counter()); 
+// console.log(counter());
+
+
+// function createBankAccount() {
+//   let balance = 0; 
+
+//   return {
+//     deposit(amount) {
+//       if (amount <= 0) {
+//         return "Deposit amount must be positive";
+//       }
+//       balance += amount;
+//       return `Deposited: ${amount}`;
+//     },
+
+//     withdraw(amount) {
+//       if (amount > balance) {
+//         return "Insufficient funds";
+//       }
+//       balance -= amount;
+//       return `Withdrawn: ${amount}`;
+//     }
+//   };
+// }
+
+
+// const account = createBankAccount();
+
+// console.log(account.deposit(100));   
+// console.log(account.withdraw(40));   
+// console.log(account.withdraw(100));  
+
+// console.log(account.balance); 
+
+
 
